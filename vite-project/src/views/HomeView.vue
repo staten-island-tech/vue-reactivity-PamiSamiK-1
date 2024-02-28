@@ -3,6 +3,7 @@
 
   </div>
 </template>
+ 
 
 <script>
   export default {
@@ -13,6 +14,15 @@
       bath:"4",
       sqft:"4,400 sqft",
    }
+
+   {
+    adress:"7025 W 63rd St, Chicago, IL 60638",
+    price:"$419,000",
+    bedrooms:"4",
+    bath:"3",
+    sqft:"1,250 sqft"}
+
+    {adress:""}
     ]
   }
 </script>
@@ -20,3 +30,30 @@
 <style lang="scss" scoped>
 
 </style>
+
+
+// store.js
+import { reactive } from 'vue'
+
+export const store = reactive({
+  count: 0
+})
+<!-- ComponentA.vue -->
+<script setup>
+import { store } from './store.js'
+</script>
+
+<template>From A: {{ store.count }}</template>
+
+<!-- ComponentB.vue -->
+<script setup>
+import { store } from './store.js'
+</script>
+
+<template>From B: {{ store.count }}</template>
+
+<template>
+  <button @click="store.count++">
+    From B: {{ store.count }}
+  </button>
+</template>
