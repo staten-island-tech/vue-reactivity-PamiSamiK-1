@@ -161,7 +161,6 @@ export default {
 
 
 <style scoped>
-<style scoped>
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -208,6 +207,4 @@ export default {
 .buttons:hover {
   background-color: #0056b3;
 }
-</style>
-
 </style>
