@@ -12,10 +12,6 @@
       <button class="buttons" @click="add(shoe)">Add to Cart</button>
     </div>
 
-   
-   
-   
-   
     <div class="cart">
       <div class="total">
         <h2>Total: {{ calculateTotal().toFixed(2) }}</h2>
@@ -31,42 +27,34 @@
   </div>
 </template>
 
-
-
-
-
-
-
-
-
 <script>
 export default {
   data() {
     return {
       inventory: [
-        {
+      {
           name: "Jordan 4 Off-White Sail",
           cost: 1048,
           category: "Jordan",
-          img: "jordan.jpg.avif",
+          img: "vite-project/public/pictures/jordan.jpg.avif",
         },
         {
           name: "Nike SB Freddy Krueger Dunk",
           cost: 89500,
           category: "Nike",
-          img: "",
+          img: "vite-project/public/pictures/Nike-Dunk-SB-Low-Freddy-Krueger.jpg.avif",
         },
         {
           name: "Jordan 1 Retro High Dior",
           cost: 12463,
           category: "Jordan",
-          img: "",
+          img: "vite-project/public/pictures/Air-Jordan-1-Retro-High-Dior-Product.jpg.avif",
         },
         {
           name: "Nike Air Force 1 Low Louis Vuitton",
           cost: 400000,
           category: "Nike",
-          img: "",
+          img: "vite-project/public/pictures/Nike-Air-Force-1-Low-Louis-Vuitton-Monogram-Brown-Damier-Azur-Product_V2.jpg.avif",
         },
         {
           name: "Chanel Low Top Trainer",
@@ -78,7 +66,7 @@ export default {
           name: "Louis Vuitton LV Skate Sneaker",
           cost: 3100,
           category: "designer",
-          img: "",
+          img: "vite-project/public/pictures/Louis-Vuitton-LV-Skate-Sneaker-Black-Black-White-Product.jpg.avif",
         },
         {
           name: "Jordan 1 Retro Chicago (1994)",
@@ -90,12 +78,12 @@ export default {
           name: "Dior B23 High",
           cost: 1239,
           category: "designer",
-          img: "",
+          img: "vite-project/public/pictures/Dior-B23-High-Multicolor-Obliquey.jpg.avif",
         },
         { name: "A Bathing Ape Bape Sta",
           cost: 792,
           category: "designer",
-          img: "",
+          img: "vite-project/public/pictures/A-Bathing-Ape-Bape-Sta-Bape-Black-White-Silver.jpg.avif",
         },
         {name: "Jordan 4 Retro Eminem",
           cost: 26000,
@@ -113,22 +101,19 @@ export default {
           name: "Louis Vuitton Nike Air Force 1 Mid",
           cost: 34995,
           category: "designer",
-          img: "",
+          img: "vite-project/public/pictures/Louis-Vuitton-Nike-Air-Force-1-Mid-By-Virgil-Abloh-Graffiti-Product.jpg.avif",
 
         },
         { name: "Golden Goose Sky-Star White Black Ice",
           cost: 778,
           category: "designer",
-          img: "",
+          img: "ggsk",
 },
       ],
       cart: [],
     };
   },
-
-
-
-  function: {
+  methods: {
     add(item) {
       this.cart.push(item);
     },
@@ -148,17 +133,6 @@ export default {
   },
 };
 </script>
-
-
-
-
-
-
-
-
-
-
-
 
 <style scoped>
 .container {
